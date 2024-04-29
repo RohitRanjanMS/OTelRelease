@@ -5,16 +5,16 @@ using Microsoft.Extensions.Logging;
 
 namespace WithoutOtel
 {
-    public class Function1
+    public class FunctionWithoutOtel
     {
-        private readonly ILogger<Function1> _logger;
+        private readonly ILogger<FunctionWithoutOtel> _logger;
 
-        public Function1(ILogger<Function1> logger)
+        public FunctionWithoutOtel(ILogger<FunctionWithoutOtel> logger)
         {
             _logger = logger;
         }
 
-        [Function("Function1")]
+        [Function("FunctionWithoutOtel")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request. - " + DateTime.Now.ToString());
