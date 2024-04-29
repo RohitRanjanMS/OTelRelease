@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/WithOtel/Properties
+/WithoutOtel/Properties/ServiceDependencies/OtelTest4291 - Zip Deploy
+/WithoutOtel/Properties/serviceDependencies.json
+/WithoutOtel/Properties/serviceDependencies.OtelTest4291 - Zip Deploy.json
