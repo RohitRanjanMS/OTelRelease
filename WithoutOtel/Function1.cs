@@ -17,8 +17,8 @@ namespace WithoutOtel
         [Function("Function1")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
-            return new OkObjectResult("Welcome to Azure Functions!");
+            _logger.LogInformation("C# HTTP trigger function processed a request. - " + DateTime.Now.ToString());
+            return new OkObjectResult("Welcome to Azure Functions! - " + DateTime.Now.ToString());
         }
     }
 }
